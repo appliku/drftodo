@@ -1,0 +1,19 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}SpeedPyCom{% endblock title %}</title>
+    <meta charset="UTF-8">
+    {% block extra_head %}
+    <meta name="description" content='Free Django Project Template'>
+    {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% tailwind_css %}
+</head>
+
+<body class="bg-slate-900 font-sans-serif leading-normal tracking-normal">
+
+{% include "main/components/hero.html" %}
+</body>
+</html>
